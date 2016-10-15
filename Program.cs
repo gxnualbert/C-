@@ -14,7 +14,7 @@ namespace ConsoleApplication2
             bool b = isRun(2000);
             Console.WriteLine(b);
             Console.ReadKey();
-
+            Console.WriteLine("ddd");
 
         }
         public static bool isRun(int year)

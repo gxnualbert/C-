@@ -10,7 +10,17 @@ namespace ConsoleApplication2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hell");
+            
+            bool b = isRun(2000);
+            Console.WriteLine(b);
+            Console.ReadKey();
+
+
+        }
+        public static bool isRun(int year)
+        {
+            bool b = (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0);
+            return b;
         }
     }
 }
